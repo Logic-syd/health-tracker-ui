@@ -22,8 +22,7 @@ const hasHighHeartRate = heartRate.some((h) => h > 100);
           <Tooltip />
           <Line
           type="monotone"
-          dataKey="heartRate"
-          stroke="#8884d8"
+          stroke="var(--accent)" dataKey="heartRate" 
           name="Heart Rate"
           dot={({ cx, cy, payload }) =>
             payload.isHigh ? (
